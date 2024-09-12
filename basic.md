@@ -1,0 +1,5 @@
+-[x] - values
+-[x] - variables
+-[x] - functions
+-[x] - loops
+-[x] - conditionals
