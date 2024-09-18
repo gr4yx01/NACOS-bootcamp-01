@@ -1,25 +1,11 @@
-const http = require('http');
+import express from 'express'
+import userRouter from './routes/user.js'
 
-// creating bare minimum server
+const app = express();
+app.use(express.json())
 
-// http://localhost:4001/footballer
-// http://localhost:4001/coach
+app.use(userRouter);
 
-const server = http.createServer((request, response) => {
-    console.log('request was made');
-    if(request.url == '/footballer' && request.method == 'GET') {
-        response.end(JSON.stringify({
-            name: 'Lionel Messi',
-            age: 32
-        }))
-    } else if(request.url == '/coach' && request.method == 'GET') {
-        response.end(JSON.stringify({
-            name: 'Jose Mourinho',
-            age: 67
-        }))
-    }
-})
-
-server.listen(4001, () => {
-    console.log('server is up and running');
+app.listen('4000', () => {
+    console.log('server currently running')
 })

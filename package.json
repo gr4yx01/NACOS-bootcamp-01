@@ -1,0 +1,15 @@
+{
+  "name": "NACOS-bootcamp-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:gr4yx01/NACOS-bootcamp-01.git",
+  "author": "asahelcode <hoyx0101@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
